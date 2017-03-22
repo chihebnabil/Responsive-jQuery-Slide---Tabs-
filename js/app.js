@@ -3,9 +3,7 @@
  	// body...
       var $target = $(e.target);
       var $tabs = $target.closest('#tabs');
-      //var $links = $('#tabs li a');
       var $current = $target.closest('li');
-     
       var $next = $current.next()
       var $prev = $current.prev()
       
