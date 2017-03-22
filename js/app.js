@@ -6,7 +6,7 @@
       var $current = $target.closest('li');
       var $next = $current.next()
       var $prev = $current.prev()
-      
+
       $tabs.find('li').removeClass('next')
       $tabs.find('li').removeClass('prev')
       $tabs.find('li').removeClass('active')
@@ -47,7 +47,7 @@ $(".prev-link").on('click',function (e) {
       $tabs.find('li').removeClass('prev')
       $('.active').prev().addClass('prev');
 
-        $('.tab-content').removeClass('show')
+      $('.tab-content').removeClass('show')
       var $hash = $('.active a')[0].hash
       console.log($hash)
       $($hash).addClass('show');
