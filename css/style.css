@@ -1,0 +1,55 @@
+html{
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  margin: 0px;
+  padding: 0px;
+}
+#tabs{
+	display: flex;
+	flex-direction: row;
+	padding: 0px;
+}
+#tabs li{
+	padding: 14px;
+	list-style: none;
+	width: 100%;
+	text-align: center;
+	
+}
+#tabs li a{
+
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+    font-family: sans-serif;
+
+}
+.active{
+	background-color: #00f;
+	color :white;
+	display: inline-block !important;
+}
+.next-link , .prev-link{
+  display: none;
+}
+.tab-content{
+	display: none;
+}
+.show{
+	display: block;
+}
+@media  (max-width: 550px) {
+#tabs li{
+	display: none;
+}
+.active{
+	display: inline-block;
+}
+.next-link , .prev-link{
+  display: block;
+      line-height: 45px;
+}
+}
